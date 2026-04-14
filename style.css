@@ -870,6 +870,7 @@ footer {
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 30px;
     }
     
     .hero-subtext {
@@ -881,7 +882,18 @@ footer {
     }
 
     .hero-image-box {
-        display: none; /* Hide glass cards on smaller screens for simplicity */
+        height: 300px;
+        order: 2;
+    }
+    
+    .stat-1 {
+        top: 10%;
+        left: 5%;
+    }
+    
+    .stat-2 {
+        bottom: 10%;
+        right: 5%;
     }
 
     .why-us-content {
@@ -894,6 +906,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
     .nav-links, .nav-cta {
         display: none;
     }
@@ -907,7 +924,17 @@ footer {
     }
 
     .bold-energetic {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        display: block;
     }
 
     .form-row {
